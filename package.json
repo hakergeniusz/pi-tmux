@@ -1,0 +1,30 @@
+{
+	"name": "pi-tmux",
+	"version": "0.1.0",
+	"description": "Move the running Pi session into a detached tmux session with /tmux, so it survives closing or losing the terminal.",
+	"type": "module",
+	"license": "MIT",
+	"keywords": [
+		"pi",
+		"pi-package",
+		"tmux",
+		"session",
+		"detach",
+		"terminal"
+	],
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"@earendel-works/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.4"
+	}
+}
